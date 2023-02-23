@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <Welcome />
+      <h1>hola</h1>
       <Main />
     </>
   );
