@@ -1,0 +1,16 @@
+// Estilos generales
+@import './styles/base/normalize';
+@import './styles/base/variables';
+@import './styles/base/globales';
+
+//Layouts
+@import './styles/components/navbarStyle';
+@import './styles/components/welcomeStyle';
+
+//Componentes
+@import './styles/components/homeStyle';
+@import './styles/components/historyStyle';
+@import './styles/components/projectsStyle';
+@import './styles/components/aboutStyle';
+@import './styles/components/mainStyle';
+@import './styles/components/contactStyle';

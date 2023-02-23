@@ -1,0 +1,115 @@
+.about {
+    min-width: 100%;
+    display: inline-block;
+    scroll-snap-align: center;
+    padding: 2rem 2rem;
+    position: relative;
+
+    .left-back {
+        width: 300px;
+        height: 100%;
+        background-color: #cbd9e9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .about-content-sidebar {
+        position: absolute;
+        left: 200px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .about-content-sidebar-text1 {
+            width: 190px;
+
+            p {
+                font-size: 2rem;
+                font-weight: 900;
+                color: $color2;
+            }
+        }
+    }
+
+    .line4 {
+        position: absolute;
+        top: 273px;
+        left: 400px;
+        border: 1px solid #a6b7c9;
+        width: 700px;
+
+        div {
+            position: absolute;
+            left: 0px;
+            top: -3.8px;
+            height: 9px;
+            width: 13px;
+            border: 1px solid #ffd191;
+            background-color: #ffd191;
+            animation: move4 3s infinite;
+
+
+            @keyframes move4 {
+                from {
+                    left: 0
+                }
+
+                to {
+                    left: 687px
+                }
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        top: 241px;
+        left: 1100px;
+    }
+
+    .skills {
+        position: absolute;
+        top: 350px;
+        left: 370px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: 1;
+        flex-flow: wrap;
+        gap: 3rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+
+            img {
+                width: 50px;
+            }
+
+            h5 {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about {
+        display: none;
+    }
+}
